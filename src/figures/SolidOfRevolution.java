@@ -1,18 +1,15 @@
 package figures;
 
 public class SolidOfRevolution extends Shape {
-    private double radius;
+    public static double radius;
     public SolidOfRevolution (double radius){
-        this.radius = radius;}
+        SolidOfRevolution.radius = radius;}
 
     public SolidOfRevolution() {
         System.out.println("Solid of revolution:" + printInfo1());
     }
-
-    @Override
-    public String shape(){
-        super.shape();
-        return null;
+    public double getRadius() {
+        return radius;
     }
     public String printInfo1() {
         return "{" +

@@ -1,22 +1,26 @@
 package figures;
 
-public interface Box {
+public class Box extends Shape {
+    private double volume;
 
-    void box();
-
-    String EMPTY_BOX = "Empty box";
-
-
-    default boolean add(Shape shape) {
-        for (int i = 0; i < shape.getVolume(2.3); i++) {
-            int add = 0;
-            if (add < shape.getVolume(2.3)) {
-                System.out.println("3");
-            }
-
-        }
-
-        return false;
+    public Box(double volume) {
+        super(volume);
+        this.volume = volume;
     }
 
+    @Override
+    public double getVolume() {
+        return volume;
+    }
+
+    public boolean add(Shape shape) {
+        double value = getVolume();
+        if (value < shape.getVolume()) {
+            value -= getVolume();
+
+                return true;
+            }
+        return false;
+    }
 }
+

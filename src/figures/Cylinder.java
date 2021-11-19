@@ -1,7 +1,15 @@
 package figures;
 
 public class Cylinder extends SolidOfRevolution {
-    private double height;
+    public static double height = 3.0;
+
+    public Cylinder(double height) {
+        super(height);
+    }
+    @Override
+    public double getVolume() {
+        return Math.PI * SolidOfRevolution.radius *  SolidOfRevolution.radius * height;
+    }
 
     @Override
     public String shape() {
@@ -15,7 +23,4 @@ public class Cylinder extends SolidOfRevolution {
                 '}';}
 
 
-    public Cylinder(double height) {
-        super(height);
-    }
 }

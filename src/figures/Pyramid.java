@@ -4,6 +4,15 @@ public class Pyramid extends Shape {
     private static double s;
     private static double h;
 
+    public Pyramid (double s, double h){
+        Pyramid.s = s;
+        Pyramid.h = h;
+    }
+    @Override
+    public double getVolume() {
+        return Cylinder.height * s * 4 / 3;
+    }
+
     public String shape(){
         System.out.println("Pyramid:" + printInfo() + "" + printInfo1());
         super.shape();
@@ -19,8 +28,4 @@ public class Pyramid extends Shape {
                 "h =" + h +
                 '}';}
 
-    public Pyramid (double s, double h){
-        Pyramid.s = s;
-        Pyramid.h = h;
-    }
 }

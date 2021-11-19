@@ -10,4 +10,8 @@ public class Ball  extends SolidOfRevolution {
         System.out.println("Ball" );
         super.shape();
         return null;}
+
+    public double getVolume() {
+        return Math.PI * Math.pow(SolidOfRevolution.radius, 3) * 4 / 3;
+    }
 }
