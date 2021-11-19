@@ -1,8 +1,8 @@
 package figures;
 
 public class Pyramid extends Shape {
-    private static double s = 2.0;
-    private static double h = 2.5;
+    private static double s;
+    private static double h;
 
     public String shape(){
         System.out.println("Pyramid:" + printInfo() + "" + printInfo1());

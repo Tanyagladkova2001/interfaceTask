@@ -1,7 +1,7 @@
 package figures;
 
 public class SolidOfRevolution extends Shape {
-    private double radius = 1.7;
+    private double radius;
     public SolidOfRevolution (double radius){
         this.radius = radius;}
 

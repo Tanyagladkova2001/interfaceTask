@@ -14,5 +14,13 @@ public class DemoShape {
         solidOfRevolution.shape();
         ball.shape();
 
-    }
+        System.out.println();
+        System.out.println("What's in this box?");
+        Box boxWithSomethingInIt = new Shape() ;
+        boxWithSomethingInIt.box();
+
+
+            }
+
+
 }
